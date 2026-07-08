@@ -17,17 +17,16 @@
    - `Message Content Intent`
 
 ## インストール
+[Poetry](https://python-poetry.org/) を使用します。
 ```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
+poetry install
 ```
 
 ## 使い方
 1. `.env.example` をコピーして `.env` を作成し、`DISCORD_BOT_TOKEN` に Bot Token を設定（`.env` は Git にコミットしないこと）
 2. Bot を起動
 ```bash
-python times.py
+poetry run python times.py
 ```
 3. Discord 上でカテゴリIDを指定してセットアップ
 ```text
